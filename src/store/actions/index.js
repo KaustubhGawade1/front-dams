@@ -26,7 +26,8 @@ export const authenticateSignInUser = (sendData, toast, reset, navigate, setLoad
     try {
         setLoader(true);
 
-        const { data } = await api.post("/auth/signin", sendData);
+        const { data } = await api.post("/auth/signin", sendData, { withCredentials: true })
+
 
         dispatch({ type: "LOGIN_USER", payload: data });
 
