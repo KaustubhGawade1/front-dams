@@ -6,4 +6,5 @@ export {
     bannerImageOne,
     bannerImageTwo,
     bannerImageThree
+    
 }
